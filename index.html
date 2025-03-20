@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+        #renk1{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 90px;
+        }
+        #kont1{
+            display: flex;
+            margin-left: 120px;
+        }
+        #b1{
+            margin-right: 50px;
+            margin-top: 30px;
+            background-color: brown;
+            border-radius: 20px;
+            border: 0;
+            box-shadow: 0px 0px 5px 5px brown;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #b2{
+            margin-right: 50px;
+            margin-top: 30px;
+            background-color: brown;
+            border-radius: 20px;
+            border: 0;
+            box-shadow: 0px 0px 5px 5px brown;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #b3{
+            margin-right: 50px;
+            margin-top: 30px;
+            background-color: brown;
+            border-radius: 20px;
+            border: 0;
+            box-shadow: 0px 0px 5px 5px brown;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #b4{
+            margin-right: 50px;
+            margin-top: 30px;
+            background-color: brown;
+            border-radius: 20px;
+            border: 0;
+            box-shadow: 0px 0px 5px 5px brown;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #b1:hover{
+            transition: 0.5s;
+            background-color: red;
+            box-shadow: 0px 0px 12px 10px red;
+            font-weight: 700;
+        }
+        #b2:hover{
+            transition: 0.5s;
+            background-color: red;
+            box-shadow: 0px 0px 12px 10px red;
+            font-weight: 700;
+        }
+        #b3:hover{
+            transition: 0.5s;
+            background-color: red;
+            box-shadow: 0px 0px 12px 10px red;
+            font-weight: 700;
+        }
+        #b4:hover{
+            transition: 0.5s;
+            background-color: red;
+            box-shadow: 0px 0px 12px 10px red;
+            font-weight: 700;
+        }
+        #e1{
+            background-color: aqua;
+            min-height: 200px;
+            width: 250px;
+        }
+        #e2{
+            background-color: rgb(0, 165, 165);
+            min-height: 80px;
+            width: 275px;
+        }
+        #a2 *{
+            font-size: 30px;
+        }
+        #aa1, #aa2, #aa3{
+display: inline;
+        }
+        #a1{
+            display: none;
+        }
+        #a2{
+            display: none;
+            background-color: rgb(140, 0, 0);
+        }
+        #a3{
+            display: none;
+            background-color: brown;
+        }
+        #a4{
+            display: none;
+            background-color: rgb(78, 21, 21);
+        }
+        #dp{
+            background-color: sandybrown;
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 90px;
+        }
+        #badges{
+            background-color: rgb(255, 190, 133);
+            min-height: 40px;
+            margin-top: 20px;
+            margin-top: 80vh;
+            display: inline-block;
+            border-radius: 20px;
+            position: absolute;
+            transition: all 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="renk1">
+    <div id="kont1">
+        <button onclick="A1()" id="b1">Anasayfa</button>
+        <button onclick="A2()" id="b2">DenemedivAI</button>
+        <button onclick="A4()" id="b3">Ofiso</button>
+        <button onclick="A3()" id="b4">Hakkımızda</button>
+        <div id="dp"><center><p id="dp1">15</p></center></div>
+    </div>
+    </div>
+    <button onclick="pkz()" id="pekmez1" style="border: 0; background: 0; cursor: pointer;">Puan Kazanma Tuşu !</button>
+    <div id="badges"><p id="d1d1">Hoşgeldiniz Denemedive +15 Puan (ilk defa girdiyseniz)</p></div>
+    <div id="a1">
+        <h2>Denemediv'e Hoşgeldiniz:</h2>
+        <hr>
+        <div id="e1">
+            <h2>DenemedivAI: </h2>
+            <p>Denemediv'in Yapay Zekası Olan <br> DenemedivAI Yapılıyor DenemedivAI <br> İle Sohbet Edilebilir.</p>
+        </div>
+        <div id="e2">
+            <h2>Ofiso: </h2>
+            <p>Ofiso Oyunu Güzel Bir Oyundur İşte :D</p>
+        </div>
+    </div>
+        <div id="a2">
+            <p id="aa1">DenemedivAIyi</p>
+            <a href="denemedivAI.zip" download="DenemedivAI.zip" id="aa2" onclick="p1()">Buradan</a>
+            <p id="aa3">İndirebilirsiniz</p>
+            <br>
+            <hr>
+            <br>
+            <h1>DenemedivAI:</h1>
+            <p>DenemedivAI Birer Sohbet Robotudur Çok Gelişmiş Değildir Ama Yinede 8 şeye cevap verebilir</p>
+        </div>
+    <div id="a3">
+        <h2>Hakkımızda:</h2>
+        <p>İlk Başta Ben 2019-2021 Yılları Arasında Yazılımcılığı Çok Ufaktan Öğreniyordum. 2024 Yılında Yazılımcılıkda Hızla Öğrenmeye Başladım Ve Yeni Bilgisayarım Oldu.Sonra Daha Çok Öğreniyordum Ve php, css, js, xml Öğrenmeye Baişladım.</p>
+    </div>
+    <div id="a4">
+        <a href="zip2.zip" download="ofiso_indir.zip" style="font-size: 30px; color: rgb(255, 0, 0);"onclick="p2()">Ofisoyu İndir !</a>
+        <br><hr><br>
+        <h2>Ofiso Kurulum Aşaması: </h2>
+        <p>İlk Başta Ofisoyu İndire Basınız</p>
+        <p>Sonrasında Dosya İndirilsin</p>
+        <p>İndirildikden Sonra Dosyaya Sağ Tıklayıp "Tümünü Ayıkla" Düğmesine Tıklayıp Bekeleyiniz</p>
+        <p>Sonrasında "baslangıc.html" Dosyasına Tıklayıp Oyunu Oynayınız</p>
+        <h2>Oynanış: </h2>
+        <p>DİKKAT BU OYUN SADECE PCde Çalışır</p>
+        <p>o tuşu ile tarayıcıyı açın ve şifre yazınız</p>
+        <p>e Tuşu ile kapatınız tarayıcıyı</p>
+        <p>Tab ile Ordery Kapısının Şifresini Yazınız</p>
+        <p>WASD ile karakterinizi hareket ettiriniz</p>
+        <p>Yukarı Ok ile atlayınız</p>
+        <h4>İyi Eğlenceler</h4>
+    </div>
+    <script>
+        var dp = parseInt(localStorage.getItem("dp") || 15);
+        var dp1 = document.getElementById("dp1");
+        dp1.innerHTML = dp;
+        document.getElementById("pekmez1").addEventListener("click", function(){
+            dp += 4;
+            u()
+            document.getElementById("d1d1").innerHTML = "Biz test için yapmışdıkta hadi neyse :D";
+        });
+        function u(){
+            localStorage.setItem("dp", dp);
+            setTimeout(function(){
+                document.getElementById("badges").style.opacity = "0%";
+                document.getElementById("badges").style.marginLeft = "0px";
+            }, 2000);
+            setTimeout(function(){
+            document.getElementById("badges").style.marginLeft = "100px";
+            document.getElementById("badges").style.opacity = "100%";
+            }, 500);
+        }
+        function A1(){
+            document.getElementById("a1").style.display = "block";
+            document.getElementById("a2").style.display = "none";
+            document.getElementById("a3").style.display = "none";
+            document.getElementById("a4").style.display = "none";
+        }
+        function A2(){
+            document.getElementById("a2").style.display = "block";
+            document.getElementById("a1").style.display = "none";
+            document.getElementById("a3").style.display = "none";
+            document.getElementById("a4").style.display = "none";
+        }
+        function A3(){
+            document.getElementById("a3").style.display = "block";
+            document.getElementById("a2").style.display = "none";
+            document.getElementById("a1").style.display = "none";
+            document.getElementById("a4").style.display = "none";
+        }
+        function A4(){
+            document.getElementById("a4").style.display = "block";
+            document.getElementById("a3").style.display = "none";
+            document.getElementById("a2").style.display = "none";
+            document.getElementById("a1").style.display = "none";
+        }
+        function p1(){
+            dp += Math.floor(Math.random() * 11) + 10;
+            dp1.innerHTML = dp;
+            u();
+            document.getElementById("d1d1").innerHTML = "DenemedivAI'ı İndirdiğin İçin Teşekkürler " + dp + " Puanınız Oldu";
+        }
+        function p2(){
+            dp += Math.floor(Math.random() * 14) + 15;
+            dp1.innerHTML = dp;
+            u();
+            document.getElementById("d1d1").innerHTML = "Ofiso'yu İndirdiğin İçin Teşekkürler " + dp + " Puanınız Oldu";
+        }
+        setTimeout(function(){
+            document.getElementById("badges").style.opacity = "0%";
+            document.getElementById("badges").style.marginLeft = "0px";
+        }, 2000);
+        setTimeout(function(){
+        document.getElementById("badges").style.marginLeft = "100px";
+        }, 500);
+        var s = setInterval(function(){
+            if(dp > 1000){
+                setTimeout(function(){
+                    document.getElementById("badges").style.opacity = "0%";
+                    document.getElementById("badges").style.marginLeft = "0px";
+                    clearInterval(s);
+                }, 2000);
+                setTimeout(function(){
+                document.getElementById("badges").style.marginLeft = "100px";
+                document.getElementById("badges").style.opacity = "100%";
+                }, 500);
+                document.getElementById("d1d1").innerHTML = "Vay be " + dp + " Puanınız var Hadi Size Bir Soru KAÇ KERE İNDİR YÜKLE YAPTIN ?";
+            }
+        }, 1);
+    </script>
+</body>
+</html>
